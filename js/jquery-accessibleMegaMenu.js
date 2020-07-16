@@ -280,7 +280,10 @@ limitations under the License.
                     .attr('aria-hidden', 'false');
 
                 var pageScrollPosition = $('html')[0].scrollTop;
-                var openPanelTopPosition = $('.' + settings.panelClass + '.' + settings.openClass).parent().offset().top;
+                var openPanelTopPosition = 0;
+                if ($('.' + settings.panelClass + '.' + settings.openClass).length) {
+                    var openPanelTopPosition = $('.' + settings.panelClass + '.' + settings.openClass).parent().offset().top;
+                }
 
                 if(pageScrollPosition > openPanelTopPosition) {
                     $('html')[0].scrollTop = openPanelTopPosition;

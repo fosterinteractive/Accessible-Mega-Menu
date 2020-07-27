@@ -1,0 +1,6 @@
+{
+  "name": "fosterinteractive/accessible-mega-menu",
+  "type": "library",
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

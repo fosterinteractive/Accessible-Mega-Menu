@@ -285,8 +285,8 @@ limitations under the License.
                     var openPanelTopPosition = $('.' + settings.panelClass + '.' + settings.openClass).parent().offset().top;
                 }
 
-                if(pageScrollPosition > openPanelTopPosition) {
-                    $('html')[0].scrollTop = openPanelTopPosition;
+                if (pageScrollPosition > openPanelTopPosition) {
+                    // $('html')[0].scrollTop = openPanelTopPosition;
                 }
 
                 if (event.type === 'mouseover' && target.is(':tabbable') && topli.length === 1 && panel.length === 0 && menu.has(document.activeElement).length > 0) {
